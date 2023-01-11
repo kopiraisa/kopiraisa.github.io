@@ -1065,13 +1065,13 @@ a:hover {
 
 @media (min-width: 576px) {
   .intro .intro-title {
-    font-size: 3.5rem;
+    font-size: 1.3rem;
   }
 }
 
 @media (min-width: 768px) {
   .intro .intro-title {
-    font-size: 3.5rem;
+    font-size: 2rem;
   }
 }
 

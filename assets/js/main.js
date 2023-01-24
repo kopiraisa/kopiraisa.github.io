@@ -213,4 +213,32 @@
       clickable: true
     }
   });
+  /**
+   * Gallery isotope and filter
+   */
+  window.addEventListener('load', () => {
+    let galelryContainer = select('.gallery-container');
+    if (galelryContainer) {
+      let galleryIsotope = new Isotope(galelryContainer, {
+        itemSelector: '.gallery-item',
+      });
+
+      let galleryFilters = select('#gallery-flters li', true);
+
+      on('click', '#gallery-flters li', function(e) {
+        e.preventDefault();
+        galleryFilters.forEach(function(el) {
+          el.classList.remove('filter-active');
+        });
+        this.classList.add('filter-active');
+
+        galleryIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+
+      }, true);
+    }
+
+  });
+
 })()

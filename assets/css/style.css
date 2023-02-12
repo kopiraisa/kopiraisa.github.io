@@ -727,6 +727,13 @@ a:hover {
   padding-bottom: 1px;
 }
 
+@media (max-width: 769px) {
+  .navbar-default.navbar-reduce{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
 .navbar-default.navbar-reduce .nav-link {
   color: #000000;
 }

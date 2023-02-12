@@ -518,7 +518,7 @@ a:hover {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: #ffffff70;
 }
 
 #preloader:before {
